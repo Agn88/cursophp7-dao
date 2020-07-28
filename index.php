@@ -55,9 +55,18 @@ $aluno->insert();
 echo $aluno;
 */
 
+
+//Update Usuario
+/*
 $usuario = new Usuario();
 $usuario->loadById(9);
 $usuario->update("Professor", "Aga");
 echo $usuario;
+*/
 
+
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
+echo $usuario;
 ?>
